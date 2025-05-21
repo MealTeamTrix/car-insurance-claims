@@ -1,12 +1,23 @@
-# Project Name
-This project is ________. (Describe the main goals of the project. Limit to 1-2 sentences)
+# Car Insurance Logistic Regression Analysis
 
-## Description
-Optional section to provide a more detailed overview of the project.
+This project performs a univariate logistic regression analysis on each feature in a car insurance dataset to determine which single feature is the best predictor of the outcome.
 
-## Get Started
-This section should be used to summarize the project and how to get started after cloning. Once this section 
-is edited, it will show up on the Project Dashboard tab. 
+## Files
 
-If you completely delete this section, the "Get Started" widget will be removed from the Project Dashboard.
+- `car_insurance_analysis.ipynb`: Jupyter notebook with the full analysis.
+- `car_insurance.csv`: CSV file containing the dataset (not included here).
+- `requirements.txt`: Python dependencies for the project.
 
+## How It Works
+
+1. Loads and cleans the dataset (`credit_score` and `annual_mileage` are imputed with their mean).
+2. Fits a logistic regression model (`outcome ~ feature`) for each feature.
+3. Calculates the accuracy of each model using the confusion matrix.
+4. Identifies the feature with the highest accuracy.
+
+## Requirements
+
+Install dependencies with:
+
+```bash
+pip install -r requirements.txt
